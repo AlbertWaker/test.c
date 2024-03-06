@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <assert.h>
 
-void my_strcpy(char* dest, const char* src)
+char* my_strcpy(char* dest, const char* src)
 {
+	char* ret = dest;
 	//断言
 	assert(src != NULL);
 	assert(dest != NULL);
@@ -12,13 +13,13 @@ void my_strcpy(char* dest, const char* src)
 	{
 		;
 	}
+	return ret;
 }
 
 int main()
 {
 	char arr1[20] = "XXXXXXXXXXXX";
 	char arr2[] =   "hello bit";
-	my_strcpy(arr1, arr2);
-	printf("%s\n",arr1);
+	printf("%s\n", my_strcpy(arr1, arr2));
 	return 0;
 } 
