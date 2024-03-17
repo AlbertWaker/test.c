@@ -9,7 +9,7 @@ int main()
 	double sum = 0;//求和
 	double PI = 0;//Π
 	printf("请输入大于2的正整数:");
-    scanf("%d", &count);
+        scanf("%d", &count);
 	for (i = 1; i <= count; i++)
 	{
 		sum = sign * 1.0 / number;
