@@ -12,8 +12,8 @@ int main()
 	{
 		if (number % i == 0)
 		{
-				number = number / i;
-				count++;
+			number = number / i;
+			count++;
 		}
 		else
 		{
