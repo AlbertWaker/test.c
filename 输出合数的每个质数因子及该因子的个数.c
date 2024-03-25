@@ -12,17 +12,8 @@ int main()
 	{
 		if (number % i == 0)
 		{
-			if (number - i == 0)
-			{
-				number = number - i;
-				count++;
-				printf("%d %d\n", i, count);
-			}
-			else
-			{
 				number = number / i;
 				count++;
-			}
 		}
 		else
 		{
